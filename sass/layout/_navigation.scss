@@ -1,0 +1,39 @@
+/* Start Navbar */
+.navbar-brand {
+    &__image {
+        width: 25rem;
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: $color-primary-1-dark;
+            font-weight: bold;
+            transition: all .2s;
+
+            &:hover {
+                color: $color-primary-2-dark;
+            }
+            &.last-child:after {
+                display: none;
+            }
+        }
+
+
+        .active>.nav-link {
+            color: $color-primary-2-dark !important
+        }
+    }
+}
+
+.navbar-nav>li>a:after {
+    content: "|";
+    padding: 7px;
+    color: #dfdfdf;
+    font-size: 1em;
+}
+
+/* End Navbar */

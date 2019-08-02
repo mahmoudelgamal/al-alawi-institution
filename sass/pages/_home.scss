@@ -1,0 +1,223 @@
+/* Start Upper Bar */
+.upper-bar {
+    background-color: $color-primary-2-dark;
+    color: #FFF;
+    padding: .5rem;
+
+    .info {
+        .language {
+            color: $color-white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.3rem;
+            .flag {
+                display: inline-block;
+                background-image: url(../img/ar-flag.jpg);
+                background-size: contain;
+                height: 10px; 
+                width: 15px;
+                transform: translate(-2px, 2px);
+            }
+        }
+    }
+}
+
+/* End Upper Bar */
+
+// start news bar section
+.news-bar-section {
+    max-width: 100%;
+    background-color: $color-primary-2-dark;
+    color: $color-white;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+// section search
+.section-searsh {
+    background-color: $color-white;
+    padding: 4rem 0;
+    width: 100%;
+
+    .select-box,
+    .input-box {
+        width: 100%;
+        height: 4rem;
+        border: 1px solid #ccc;
+        padding: 8px;
+        font-size: inherit;
+        color: #6f6f6f;
+        border-radius: 2px;
+        transition: all .2s;
+
+        &:active,
+        &:focus {
+            border-color: $color-primary-2-light;
+            outline: none;
+        }
+    }
+}
+
+// about section
+.section-about {
+    padding: 10rem 0;
+    background-color: #FAFBFC;
+
+    .about-video iframe {
+        border-radius: 4px;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    }
+}
+
+// upcoming classes section
+.section-upcoming-classes {
+    padding: 10rem 0;
+    background-color: $color-white;
+
+    .card {
+        position: relative;
+
+        .course-date {
+            width: 7rem;
+            height: 10rem;
+            background-color: rgba(0, 147, 178, 1);
+            color: $color-white;
+            padding: .5rem;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+
+            &__day {
+                display: block;
+                border-bottom: 1px solid #ffffff8c;
+                font-size: 2.6rem;
+            }
+
+            &__month {
+                padding: 1rem;
+                display: block
+            }
+        }
+
+        .button-box {
+            text-align: center;
+        }
+    }
+}
+
+// training categories section
+.training-categories-section {
+    padding: 10rem 0;
+    background-color: $color-secondary;
+}
+
+// start media section
+.media-center {
+    padding: 10rem 0;
+
+    ul {
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+        li {
+            color: #08526d;
+            border: 2px solid #08526d;
+            padding: 10px 20px !important;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+
+            &.active,
+            &:hover {
+                background-color: $color-primary-1-dark;
+                border: 2px solid $color-primary-1-dark;
+                color: #FFF
+            }
+
+            &:hover {
+                cursor: pointer
+            }
+        }
+    }
+
+    .shuffle-imgs .row {
+        margin: 0;
+
+        img {
+            width: 100%
+        }
+
+    }
+}
+
+// start certification 
+.section-certifications {
+    padding: 10rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-white, .9), rgba($color-white, .9)), url(../img/testimonial.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// start accreditations
+.section-our-client,
+.section-accreditation {
+    padding: 10rem 0;
+    background-color: $color-white;
+    // display: flex;
+
+    a {
+        // align-items: center;
+        img {
+            width: 75% !important;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            max-height: 18.2rem;
+        }
+    }
+}
+.section-our-client {
+    background-color: $color-secondary
+}
+// start contact
+.section-contact {
+    padding: 10rem 0;
+    background-color: $color-primary-1-dark;
+    .contact-box {
+        width: 60%;
+        margin: 0 auto;
+        background-color: $color-white;
+        border-radius: .5rem;
+        padding: 4px 3px 2px;
+        &>input {
+            width: 40.5%;
+            height: 50px;
+            font-size: 24px;
+            text-indent: 11px;
+            border-radius: 3px;
+            border: 0;
+            font-weight: 300;
+            color: #38464d !important;
+            background-color: #F9FAFA;
+        }
+    }
+
+    .button-primary {
+        height: 100%;
+        height: 50px;
+        transform: translateY(-4px);
+    }
+
+    p {
+        color: $color-white;
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 8px
+    }
+}

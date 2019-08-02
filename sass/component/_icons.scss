@@ -1,0 +1,17 @@
+.icon-box {
+    &__text {
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+        }
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
+    [class^='fa'] {
+        padding:0 7px 0;
+        color: $color-white;
+    }
+} 

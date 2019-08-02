@@ -1,0 +1,14 @@
+/* Start Latest Posts */
+.section-upcoming-classes .card ,
+.media-center .card {
+    margin-bottom: 30px;
+    .card-title {
+        font-size: 20px;
+        line-height: 1.5;
+        color: #08526d
+    }
+    .card-link {
+        color: $color-primary-2-dark;
+        font-weight: bold
+    }
+}
