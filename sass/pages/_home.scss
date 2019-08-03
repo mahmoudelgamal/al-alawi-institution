@@ -11,11 +11,12 @@
             font-weight: bold;
             font-family: 'Cairo', sans-serif;
             font-size: 1.3rem;
+
             .flag {
                 display: inline-block;
                 background-image: url(../img/ar-flag.jpg);
                 background-size: contain;
-                height: 10px; 
+                height: 10px;
                 width: 15px;
                 transform: translate(-2px, 2px);
             }
@@ -39,24 +40,6 @@
     background-color: $color-white;
     padding: 4rem 0;
     width: 100%;
-
-    .select-box,
-    .input-box {
-        width: 100%;
-        height: 4rem;
-        border: 1px solid #ccc;
-        padding: 8px;
-        font-size: inherit;
-        color: #6f6f6f;
-        border-radius: 2px;
-        transition: all .2s;
-
-        &:active,
-        &:focus {
-            border-color: $color-primary-2-light;
-            outline: none;
-        }
-    }
 }
 
 // about section
@@ -74,39 +57,6 @@
 .section-upcoming-classes {
     padding: 10rem 0;
     background-color: $color-white;
-
-    .card {
-        position: relative;
-
-        .course-date {
-            width: 7rem;
-            height: 10rem;
-            background-color: rgba(0, 147, 178, 1);
-            color: $color-white;
-            padding: .5rem;
-            text-align: center;
-            text-transform: capitalize;
-            letter-spacing: 1px;
-            position: absolute;
-            top: 1rem;
-            left: 1rem;
-
-            &__day {
-                display: block;
-                border-bottom: 1px solid #ffffff8c;
-                font-size: 2.6rem;
-            }
-
-            &__month {
-                padding: 1rem;
-                display: block
-            }
-        }
-
-        .button-box {
-            text-align: center;
-        }
-    }
 }
 
 // training categories section
@@ -173,6 +123,7 @@
     // display: flex;
 
     a {
+
         // align-items: center;
         img {
             width: 75% !important;
@@ -182,19 +133,23 @@
         }
     }
 }
+
 .section-our-client {
     background-color: $color-secondary
 }
+
 // start contact
 .section-contact {
     padding: 10rem 0;
     background-color: $color-primary-1-dark;
+
     .contact-box {
         width: 60%;
         margin: 0 auto;
         background-color: $color-white;
         border-radius: .5rem;
         padding: 4px 3px 2px;
+
         &>input {
             width: 40.5%;
             height: 50px;
@@ -205,6 +160,11 @@
             font-weight: 300;
             color: #38464d !important;
             background-color: #F9FAFA;
+            font-family: inherit;
+            &:active,
+            &:focus {
+                outline-color: $color-primary-2-dark;
+            }
         }
     }
 
@@ -218,6 +178,17 @@
         color: $color-white;
         font-weight: 300;
         font-size: 20px;
-        margin-bottom: 8px
+        margin-bottom: 1.5rem
+    }
+}
+
+@media(max-width: 767px) {
+    .section-contact {
+        .contact-box {
+            width: 90%;
+            &>input {
+                font-size: 18px;
+            }
+        }
     }
 }

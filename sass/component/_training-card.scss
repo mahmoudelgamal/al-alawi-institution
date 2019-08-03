@@ -1,5 +1,4 @@
 .training-card {
-
     // FUNCTIONALITY
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -192,4 +191,13 @@
         }
     }
 
+}
+
+@media(max-width:767px) {
+    .training-card {
+        margin-bottom: 2rem
+    }
+    .training-card__heading {
+        top: 16rem
+    }
 }

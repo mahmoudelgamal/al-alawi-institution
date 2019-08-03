@@ -42,3 +42,18 @@ body {
         border-radius: 2px;    
     }
 }
+@media(max-width:767px) {
+    .heading {
+        &-primary {
+            font-size: 3rem;
+        }
+        &--side::before {
+            content: '';
+            width: 6rem;
+        }
+        &--center::before {
+            content: '';
+            width: 6rem;
+        }
+    }
+}

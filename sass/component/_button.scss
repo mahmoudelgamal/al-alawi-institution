@@ -26,9 +26,13 @@
             padding: 1.3rem 3.9rem;
             font-size: 1.8rem;
         }
+
         &--back {
-            color: $color-black;
+            color: $color-primary-1-dark;
             background-color: $color-white;
+            border-radius: 3px;
+            box-shadow: 0 2rem 4rem rgba(28, 56, 106, .1);
+
             &:hover {
                 color: $color-black;
                 opacity: 1;
@@ -62,6 +66,14 @@
         &:active {
             box-shadow: 0 .5rem 1rem rgba($color-black, .15);
             transform: translateY(0);
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .button {
+        &-text {
+            margin-bottom: 2rem;
         }
     }
 }

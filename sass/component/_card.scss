@@ -1,14 +1,70 @@
 /* Start Latest Posts */
-.section-upcoming-classes .card ,
-.media-center .card {
+.section-upcoming-classes .card,
+.media-center .card ,
+.section-certifications .card {
+    transition: all .2s ease-in-out;
     margin-bottom: 30px;
+    position: relative;
+
     .card-title {
         font-size: 20px;
         line-height: 1.5;
         color: #08526d
     }
+ 
     .card-link {
         color: $color-primary-2-dark;
-        font-weight: bold
+        font-weight: bold;
     }
+
+    .text-muted {
+        font-size: 1.3rem;
+        color: $color-grey-dark-2 !important;
+    }
+
+    .fas {
+        margin-right: 5px;
+        margin-top: 6px;
+    }
+
+    .course-date {
+        width: 7rem;
+        height: 10rem;
+        background-color: rgba(0, 147, 178, 1);
+        color: $color-white;
+        padding: .5rem;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        border-radius: 2px;
+        &__day {
+            display: block;
+            border-bottom: 1px solid #ffffff8c;
+            font-size: 2.6rem;
+        }
+
+        &__month {
+            padding: 1rem;
+            display: block
+        }
+    }
+
+    &:hover {
+        background-color: #fdfdfd;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    }
+}
+
+@media(max-width:767px) {
+    .section-upcoming-classes .card .course-date {
+        width: 6rem;
+        height: 9rem;
+        &__day {
+            font-size: 2rem;
+        }
+    }
+    
 }
