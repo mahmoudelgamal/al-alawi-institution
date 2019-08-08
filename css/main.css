@@ -587,10 +587,7 @@ body {
     top: -1px;
     display: inline-block; }
   .footer .map {
-    width: 100%;
-    height: 30rem;
-    background-color: #EF8718;
-    color: #fff; }
+    width: 100%; }
 
 @media (max-width: 992px) {
   .footer .helpful-links h2,
