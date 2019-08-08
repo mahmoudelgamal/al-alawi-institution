@@ -587,7 +587,8 @@ body {
     top: -1px;
     display: inline-block; }
   .footer .map {
-    width: 100%; }
+    width: 100%;
+    transform: translateY(-32px); }
 
 @media (max-width: 992px) {
   .footer .helpful-links h2,
