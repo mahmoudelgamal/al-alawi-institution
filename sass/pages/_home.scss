@@ -3,6 +3,8 @@
     background-color: $color-primary-2-dark;
     color: #FFF;
     padding: .5rem;
+    position: relative;
+    z-index: 999999;
 
     .info {
         .language {
