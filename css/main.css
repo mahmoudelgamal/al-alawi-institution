@@ -45,6 +45,13 @@ body {
   text-transform: uppercase;
   font-weight: 900; }
 
+.heading-tertiary {
+  color: #1c386a;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 20px; }
+
 .heading--side::before {
   content: '';
   display: table;
@@ -453,6 +460,30 @@ body {
   .form__select--media, .form__input--media {
     margin-bottom: 1rem; } }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  @media only screen and (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
+  .feature-box__icon {
+    font-size: 7rem;
+    margin-bottom: 2.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #EF8718, #EC640F);
+    -webkit-background-clip: text;
+    color: transparent; }
+    @media only screen and (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 /* Start Navbar */
 .navbar {
   padding: 0 1rem;
@@ -657,6 +688,18 @@ body {
   .section-about .about-video iframe {
     border-radius: 4px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.section-services {
+  padding: 10rem 0;
+  background-image: linear-gradient(to right bottom, rgba(12, 36, 97, 0.8), rgba(12, 36, 97, 0.8)), url(../img/services.jpg);
+  background-size: cover; }
+  .section-services .heading-primary {
+    color: #EC640F; }
+  .section-services .heading--center::before {
+    background-color: #EC640F; }
+  @media only screen and (max-width: 56.25em) {
+    .section-services {
+      padding: 10rem 0; } }
 
 .section-upcoming-classes {
   padding: 10rem 0;

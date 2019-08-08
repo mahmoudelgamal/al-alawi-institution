@@ -13,7 +13,7 @@ $(function () {
   $('.slider, .carousel-item').height(winH - 70);
 
   // Featured Work Shuffle
-  $('.featured-work ul li').on('click', function () {
+  $('.media-center ul li').on('click', function () {
     $(this).addClass('active').siblings().removeClass('active');
     if ($(this).data('class') === 'all') {
       $('.shuffle-imgs .col-md').css('opacity', 1);

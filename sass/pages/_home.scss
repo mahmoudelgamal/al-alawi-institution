@@ -54,7 +54,27 @@
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
     }
 }
+// sevices
+.section-services {
+    padding: 10rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#0c2461, 0.8),
+        rgba(#0c2461, 0.8)),
+    url(../img/services.jpg);
+    background-size: cover;
+    .heading-primary {
+        color: $color-primary-2-dark;
+    }
+    .heading--center::before  {
+        background-color: $color-primary-2-dark;
+    }
 
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+}
 // upcoming classes section
 .section-upcoming-classes {
     padding: 10rem 0;
