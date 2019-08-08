@@ -1,6 +1,6 @@
 /* Start Latest Posts */
 .section-upcoming-classes .card,
-.media-center .card ,
+.media-center .card,
 .section-certifications .card {
     transition: all .2s ease-in-out;
     margin-bottom: 30px;
@@ -11,10 +11,17 @@
         line-height: 1.5;
         color: #08526d
     }
- 
+
     .card-link {
-        color: $color-primary-2-dark;
+        color: #fff;
         font-weight: bold;
+        background-color: #0c2461;
+        padding: 0px 20px;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 40px;
+        margin-top: 12px;
+        display: inline-block;
     }
 
     .text-muted {
@@ -40,6 +47,7 @@
         top: 1rem;
         left: 1rem;
         border-radius: 2px;
+
         &__day {
             display: block;
             border-bottom: 1px solid #ffffff8c;
@@ -62,9 +70,10 @@
     .section-upcoming-classes .card .course-date {
         width: 6rem;
         height: 9rem;
+
         &__day {
             font-size: 2rem;
         }
     }
-    
+
 }

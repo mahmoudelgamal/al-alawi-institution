@@ -272,8 +272,15 @@ body {
   .section-upcoming-classes .card .card-link,
   .media-center .card .card-link,
   .section-certifications .card .card-link {
-    color: #EC640F;
-    font-weight: bold; }
+    color: #fff;
+    font-weight: bold;
+    background-color: #0c2461;
+    padding: 0px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 40px;
+    margin-top: 12px;
+    display: inline-block; }
   .section-upcoming-classes .card .text-muted,
   .media-center .card .text-muted,
   .section-certifications .card .text-muted {
@@ -484,7 +491,9 @@ body {
 /* End Navbar */
 /* Start Footer */
 .footer {
-  padding: 10.5rem 0 4rem; }
+  padding: 10.5rem 0 4rem;
+  background-color: #1C386A;
+  color: #fff; }
   .footer .site-info {
     transform: translateY(-4rem); }
     .footer .site-info img {
@@ -492,31 +501,37 @@ body {
       margin-bottom: 2rem; }
     .footer .site-info p {
       line-height: 1.8;
-      color: #727272; }
+      font-weight: bold; }
     .footer .site-info a {
-      color: #08526d;
+      color: #fff;
       font-size: 15px;
       font-weight: bold; }
-      .footer .site-info a:before {
-        font-family: 'Font Awesome 5 Free';
-        content: "\f138";
-        display: inline-block;
-        margin-right: 5px; }
-  .footer .helpful-links h2,
-  .footer .contact h2 {
+      .footer .site-info a:not(:last-child) {
+        margin-bottom: 4px;
+        display: inline-block; }
+    .footer .site-info .fas {
+      margin-right: 5px;
+      color: #EC640F; }
+  .footer .helpful-links h2 {
     font-size: 22px;
-    color: #08526d; }
+    color: #fff; }
+    .footer .helpful-links h2::before {
+      background-color: #EC640F; }
+  .footer .helpful-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s; }
+    .footer .helpful-links ul li a:hover {
+      color: #EF8718; }
   .footer .helpful-links ul li:before {
     font-family: 'Font Awesome 5 Free';
     content: "\f105";
     margin-right: 5px;
-    color: #08526d;
+    color: #EC640F;
     font-size: 12px;
     position: relative;
     top: -1px;
     display: inline-block; }
-  .footer .contact ul li {
-    margin-bottom: 24px; }
   .footer .map {
     width: 100%;
     height: 30rem;
@@ -534,17 +549,20 @@ body {
 /* End Footer */
 /* Start Copyright */
 .copyright {
-  border-top: 1px solid #c0c0c0;
-  padding: 20px; }
+  padding: 8px;
+  color: #fff;
+  background-color: #0f1c31; }
   .copyright ul {
     margin: 0; }
   .copyright li {
     display: inline-block; }
     .copyright li a {
-      color: #777;
+      color: #fff;
       display: inline-block;
       margin-left: 20px;
       font-size: 18px; }
+      .copyright li a:hover {
+        opacity: .8; }
 
 /* End Copyright */
 /* Start Upper Bar */
@@ -625,6 +643,8 @@ body {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/testimonial.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
+  .section-certifications .card {
+    text-align: center; }
 
 .section-our-client,
 .section-accreditation {
@@ -642,9 +662,9 @@ body {
 
 .section-contact {
   padding: 10rem 0;
-  background-color: #1C386A; }
+  background-color: #EC640F; }
   .section-contact .contact-box {
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
     background-color: #fff;
     border-radius: .5rem;
@@ -665,7 +685,8 @@ body {
   .section-contact .button-primary {
     height: 100%;
     height: 50px;
-    transform: translateY(-4px); }
+    transform: translateY(-4px);
+    background-color: #1C386A; }
   .section-contact p {
     color: #fff;
     font-weight: 300;

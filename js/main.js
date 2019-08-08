@@ -3,7 +3,7 @@ $(function () {
   // start contact form
   var container = $('.section-contact .contact-box').innerWidth();
   var button = $('.section-contact .button-primary').outerWidth();
-  var oneWidth = (container - (button + 14)) / 2;
+  var oneWidth = (container - (button + 19)) / 3;
   $('.section-contact .contact-box > input').css('width', oneWidth + 'px')
 
   // Adjust Slider Height
