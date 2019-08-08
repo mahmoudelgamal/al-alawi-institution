@@ -730,10 +730,10 @@ body {
         color: #FFF; }
       .media-center ul li:hover {
         cursor: pointer; }
-  .media-center .shuffle-imgs .row {
-    margin: 0; }
-    .media-center .shuffle-imgs .row img {
-      width: 100%; }
+  .media-center .our-news,
+  .media-center .events {
+    opacity: 0;
+    display: none; }
 
 .section-certifications {
   padding: 10rem 0;

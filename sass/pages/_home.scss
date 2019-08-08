@@ -119,14 +119,20 @@
         }
     }
 
-    .shuffle-imgs .row {
-        margin: 0;
-
-        img {
-            width: 100%
-        }
-
+    .our-news,
+    .events {
+        opacity: 0;
+        display: none;
     }
+
+    // .shuffle-imgs .row {
+    //     margin: 0;
+
+    //     img {
+    //         width: 100%
+    //     }
+
+    // }
 }
 
 // start certification 
