@@ -832,4 +832,10 @@ body {
   .section-contact .contact-box {
     width: 90%; }
     .section-contact .contact-box > input {
-      font-size: 18px; } }
+      font-size: 18px;
+      display: block !important;
+      width: 100% !important; }
+  .button-primary {
+    margin-top: 2rem;
+    margin-left: .5rem;
+    margin-bottom: .5rem; } }
