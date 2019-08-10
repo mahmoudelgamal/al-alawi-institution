@@ -837,7 +837,9 @@ body {
       width: 90% !important;
       margin-top: 1rem;
       margin: 1rem auto 0; }
+      .section-contact .contact-box > input:first-child {
+        margin-top: 2rem; }
   .button-primary {
     margin-top: 2rem;
     margin-left: 2.5rem;
-    margin-bottom: .5rem; } }
+    margin-bottom: 1.5rem; } }
