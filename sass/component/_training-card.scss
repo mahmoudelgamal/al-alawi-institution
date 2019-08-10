@@ -201,3 +201,13 @@
         top: 16rem
     }
 }
+@media(max-width:415px) {
+    .training-card__cta {
+        padding: 7rem 1rem 4rem 1rem;
+    }
+    .training-card__heading {
+        right: 1rem;
+        top: 18rem;
+        font-size: 2rem;
+    }
+}
