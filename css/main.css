@@ -834,8 +834,9 @@ body {
     .section-contact .contact-box > input {
       font-size: 18px;
       display: block !important;
-      width: 100% !important;
-      margin-top: 1rem; }
+      width: 90% !important;
+      margin-top: 1rem;
+      margin: 1rem auto 0; }
   .button-primary {
     margin-top: 2rem;
     margin-left: .5rem;
