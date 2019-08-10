@@ -450,7 +450,8 @@ body {
   font-size: inherit;
   color: #6f6f6f;
   border-radius: 2px;
-  transition: all .2s; }
+  transition: all .2s;
+  background-color: #fff !important; }
   .form__select:active, .form__select:focus, .form__input:active, .form__input:focus {
     border-color: #EF8718;
     outline: none;
