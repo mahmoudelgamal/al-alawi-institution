@@ -12,19 +12,18 @@ $(function () {
     navH = $('.navbar').innerHeight();
   $('.slider, .carousel-item').height(winH - 70);
 
-  // Featured Work Shuffle
-  $('.media-center ul li').on('click', function () {
+  // tabs
+  $('.tab__item').on('click', function () {
     $(this).addClass('active').siblings().removeClass('active');
-    // if ($(this).data('class') === '.events') {
-    //   $('.our-news').css({
-    //     'opacity' : 1,
-    //     "display" : "block"
-    //   });
-    // } else {
-    //   $('.events').css('opacity', '0');
-    //   $($(this).data('class')).parent().css('opacity', 1);
-    // }
+    $('.content-list > div').hide()
+    $($(this).data('class')).fadeIn()
+    console.log($(this).data('class'))
   });
+  // gallery
+  $(function(){
+      $('#gallery').simpleLightbox();
+    });
+    
   // start owl carousel
   var owl = $('.owl-carousel');
   var owl2 = $('section-certifications .owl-carousel');
@@ -44,5 +43,6 @@ $(function () {
     autoplayTimeout: 1000,
     autoplayHoverPause: true
   });
+  
 
 });
