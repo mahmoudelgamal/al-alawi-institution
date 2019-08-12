@@ -970,3 +970,11 @@ body {
     padding: 8rem 0; }
     .contact .get-touch .button-primary {
       margin-left: 1.6rem; }
+
+.services {
+  padding: 8rem 0; }
+  .services .content-list img {
+    max-width: 50rem;
+    margin-bottom: 2rem; }
+  .services .content-list p {
+    width: 90%; }
