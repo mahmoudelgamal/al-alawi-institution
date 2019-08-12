@@ -13,6 +13,13 @@ body {
         text-transform: uppercase;
         font-weight: 900;
     }
+    &-secondary {
+        font-size: 3rem;
+        color: $color-primary-2-dark;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
 
     &-tertiary {
         color: #1c386a;

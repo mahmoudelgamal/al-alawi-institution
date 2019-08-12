@@ -1,0 +1,58 @@
+//  start about us intro 
+.about {
+    &__intro {
+        padding-bottom: 10rem;
+        padding-top: 10rem;
+
+        p {
+            line-height: 1.7;
+            font-size: inherit;
+            font-weight: bold;
+            width: 70%;
+            margin: 2rem auto;
+            color: $color-grey-dark-3;
+        }
+    }
+
+    // start our statement
+    &__our-statement {
+        padding-bottom: 10rem;
+        padding-top: 10rem;
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary-2-light, .8),
+                rgba($color-primary-2-dark, .8)),
+            url(../img/about04.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+        .heading-primary {
+            color: $color-primary-1-dark
+        }
+
+    }
+
+    // start feature
+    &__feature {
+        padding-bottom: 4rem;
+        padding-top: 6rem;
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary-1-dark, .9),
+                rgba($color-primary-1-dark, .9)),
+            url(../img/about03.jpg);
+        background-attachment: fixed;
+        color: $color-white !important;
+
+        li:last-child {
+            margin-bottom: 3rem
+        }
+
+        img {
+            margin-top: 4rem;
+            border-radius: 2px;
+        }
+
+        .heading--light::before {
+            background-color: $color-primary-2-dark !important
+        }
+    }
+}
