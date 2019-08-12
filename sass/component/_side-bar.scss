@@ -1,0 +1,28 @@
+.media__side-bar {
+    border: 1px solid $color-grey-light-2;
+    border-top: 1rem solid $color-primary-2-dark;
+    background-color: $color-white;
+
+    li {
+        text-align: center;
+        padding: 1.5rem 0;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-grey-light-2
+        }
+    }
+
+    a {
+        color: $color-grey-dark-3;
+        text-decoration: none;
+        transition: all .2s;
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-transform: capitalize;
+
+        &:hover,
+        &.active  {
+            color: $color-primary-2-dark
+        }
+    }
+}

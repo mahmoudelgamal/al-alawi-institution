@@ -25,7 +25,9 @@
         }
     }
 }
-
+.content-list>div:not(:first-child) {
+    display: none
+}
 @media(max-width: 767px) {
     .tab__item {
         margin-right: 10px;
