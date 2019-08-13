@@ -1,0 +1,15 @@
+.course {
+    &__title {
+        background-color: $color-primary-1-dark;
+        color: $color-white;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 3rem 0
+    }
+    &__description {
+        padding: 5rem 0;
+        font-weight: bold;
+        color: $color-grey-dark-3
+    }       
+}

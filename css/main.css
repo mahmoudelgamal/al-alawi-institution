@@ -273,21 +273,27 @@ body {
 .section-upcoming-classes .card,
 .media-center .card,
 .section-certifications .card,
-.media .card {
+.media .card,
+.certifications .card,
+.training-categories .card {
   transition: all .2s ease-in-out;
   margin-bottom: 30px;
   position: relative; }
   .section-upcoming-classes .card .card-title,
   .media-center .card .card-title,
   .section-certifications .card .card-title,
-  .media .card .card-title {
+  .media .card .card-title,
+  .certifications .card .card-title,
+  .training-categories .card .card-title {
     font-size: 20px;
     line-height: 1.5;
     color: #08526d; }
   .section-upcoming-classes .card .card-link,
   .media-center .card .card-link,
   .section-certifications .card .card-link,
-  .media .card .card-link {
+  .media .card .card-link,
+  .certifications .card .card-link,
+  .training-categories .card .card-link {
     color: #fff;
     font-weight: bold;
     background-color: #0c2461;
@@ -300,19 +306,25 @@ body {
   .section-upcoming-classes .card .text-muted,
   .media-center .card .text-muted,
   .section-certifications .card .text-muted,
-  .media .card .text-muted {
+  .media .card .text-muted,
+  .certifications .card .text-muted,
+  .training-categories .card .text-muted {
     font-size: 1.3rem;
     color: #7d7d7d !important; }
   .section-upcoming-classes .card .fas,
   .media-center .card .fas,
   .section-certifications .card .fas,
-  .media .card .fas {
+  .media .card .fas,
+  .certifications .card .fas,
+  .training-categories .card .fas {
     margin-right: 5px;
     margin-top: 6px; }
   .section-upcoming-classes .card .course-date,
   .media-center .card .course-date,
   .section-certifications .card .course-date,
-  .media .card .course-date {
+  .media .card .course-date,
+  .certifications .card .course-date,
+  .training-categories .card .course-date {
     width: 7rem;
     height: 10rem;
     background-color: #0093b2;
@@ -328,20 +340,26 @@ body {
     .section-upcoming-classes .card .course-date__day,
     .media-center .card .course-date__day,
     .section-certifications .card .course-date__day,
-    .media .card .course-date__day {
+    .media .card .course-date__day,
+    .certifications .card .course-date__day,
+    .training-categories .card .course-date__day {
       display: block;
       border-bottom: 1px solid #ffffff8c;
       font-size: 2.6rem; }
     .section-upcoming-classes .card .course-date__month,
     .media-center .card .course-date__month,
     .section-certifications .card .course-date__month,
-    .media .card .course-date__month {
+    .media .card .course-date__month,
+    .certifications .card .course-date__month,
+    .training-categories .card .course-date__month {
       padding: 1rem;
       display: block; }
   .section-upcoming-classes .card:hover,
   .media-center .card:hover,
   .section-certifications .card:hover,
-  .media .card:hover {
+  .media .card:hover,
+  .certifications .card:hover,
+  .training-categories .card:hover {
     background-color: #fdfdfd;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
 
@@ -651,9 +669,8 @@ body {
 .navbar-brand__image {
   width: 25rem; }
 
-.navbar-light {
-  position: relative;
-  z-index: 9999; }
+.navbar-light .navbar-nav {
+  position: relative; }
   .navbar-light .navbar-nav .nav-item {
     display: block;
     padding: 15px 0; }
@@ -686,33 +703,25 @@ body {
     padding: 10px; }
     .navbar-light .navbar-nav .nav-hover-content li:not(:last-child) {
       border-bottom: 1px solid #f1f1f1; }
-  .navbar-light .navbar-nav .nav-hover-content .about-content {
-    top: 6.8rem;
-    left: 46%;
-    opacity: 0;
+  .navbar-light .navbar-nav .nav-hover-content .certification-content {
+    top: 6.7rem;
+    right: 24%;
     min-width: 20rem;
-    transition: all .2s;
-    opacity: 0; }
-  .navbar-light .navbar-nav .nav-hover-content .categories-content {
-    top: 6.8rem;
-    left: 52%;
-    min-width: 20rem;
-    opacity: 0;
+    display: none;
     transition: all .2s; }
   .navbar-light .navbar-nav .nav-hover-content .media-content {
-    top: 6.8rem;
-    left: 73.5%;
+    top: 6.7rem;
+    right: 2.5%;
     min-width: 22rem;
-    opacity: 0;
+    display: none;
     transition: all .2s; }
-  .navbar-light .navbar-nav .nav__about:hover .about-content {
-    opacity: 1; }
-  .navbar-light .navbar-nav .nav__categories:hover .categories-content {
-    opacity: 1; }
+  .navbar-light .navbar-nav .nav__certification:hover .certification-content {
+    display: block; }
   .navbar-light .navbar-nav .nav__media:hover .media-content {
-    opacity: 1; }
-  .navbar-light .active > .nav-link {
-    color: #EC640F !important; }
+    display: block; }
+
+.navbar-light .active > .nav-link {
+  color: #EC640F !important; }
 
 .navbar-nav > li > a:after {
   content: "|";
@@ -1030,3 +1039,25 @@ body {
     color: #777;
     text-transform: uppercase;
     font-weight: bold; }
+
+.certifications {
+  padding: 8rem 0; }
+
+.training-categories {
+  padding: 8rem 0; }
+
+.providers {
+  margin-top: 6rem; }
+
+.course__title {
+  background-color: #1C386A;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem 0; }
+
+.course__description {
+  padding: 5rem 0;
+  font-weight: bold;
+  color: #333; }

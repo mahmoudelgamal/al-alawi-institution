@@ -11,9 +11,9 @@
 }
 
 .navbar-light {
-    position: relative;
-    z-index: 9999;
     .navbar-nav {
+        position: relative;
+
         .nav-item {
             display: block;
             padding: 15px 0;
@@ -65,42 +65,31 @@
                 }
             }
 
-            .about-content {
-                top: 6.8rem;
-                left: 46%;
-                opacity: 0;
-                min-width: 20rem;
-                transition: all .2s;
-                opacity: 0;
-            }
 
-            .categories-content {
-                top: 6.8rem;
-                left: 52%;
+            .certification-content {
+                top: 6.7rem;
+                right: 24%;
                 min-width: 20rem;
-                opacity: 0;
+                display: none;
                 transition: all .2s;
             }
 
             .media-content {
-                top: 6.8rem;
-                left: 73.5%;
+                top: 6.7rem;
+                right: 2.5%;
                 min-width: 22rem;
-                opacity: 0;
+                display: none;
                 transition: all .2s;
             }
         }
 
-        .nav__about:hover .about-content {
-            opacity: 1;
-        }
 
-        .nav__categories:hover .categories-content {
-            opacity: 1;
+        .nav__certification:hover .certification-content {
+            display: block;
         }
 
         .nav__media:hover .media-content {
-            opacity: 1;
+            display: block;
         }
 
     }
@@ -133,6 +122,7 @@
             }
         }
     }
+
     .nav-hover-content {
         display: none;
     }
