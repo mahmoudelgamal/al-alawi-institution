@@ -692,6 +692,10 @@ body {
     .media__side-bar a:hover, .media__side-bar a.active {
       color: #EC640F; }
 
+@media (max-width: 767px) {
+  .media__side-bar {
+    margin-bottom: 3rem; } }
+
 .shuffle-imgs .row {
   margin: 0; }
   .shuffle-imgs .row .col-md {

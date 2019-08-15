@@ -1,17 +1,54 @@
 .services {
     padding: 8rem 0;
+
     .content-list {
         img {
             max-width: 50rem;
-            margin-bottom: 2rem
+            margin-bottom: 2rem;
         }
+
         p {
             width: 90%
         }
     }
 }
-@if $site-language == Arabic {
+
+@if $site-language==English {
+    @media(max-width:767px) {
+        .services {
+            .content-list {
+                img {
+                    padding-right: 5rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 414px) {
+        .services .content-list img {
+            padding-right: 18rem;
+        }
+    }
+}
+
+@if $site-language==Arabic {
     .services {
         direction: rtl
+    }
+
+    @media(max-width:767px) {
+        .services {
+            .content-list {
+                img {
+                    padding-left: 5rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 414px) {
+        .services .content-list img {
+            padding-left: 18rem;
+        }
     }
 }
