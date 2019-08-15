@@ -1161,8 +1161,16 @@ body {
   .services .content-list p {
     width: 90%; }
 
+@media (max-width: 767px) {
+  .services .content-list img {
+    padding-right: 5rem; } }
+
 .services {
   direction: rtl; }
+
+@media (max-width: 767px) {
+  .services .content-list img {
+    padding-left: 5rem; } }
 
 .media {
   padding: 8rem 0;

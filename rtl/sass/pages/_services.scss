@@ -1,17 +1,39 @@
 .services {
     padding: 8rem 0;
+
     .content-list {
         img {
             max-width: 50rem;
-            margin-bottom: 2rem
+            margin-bottom: 2rem;
         }
+
         p {
             width: 90%
         }
     }
 }
-@if $site-language == Arabic {
+@media(max-width:767px) {
+    .services {
+        .content-list {
+            img {
+                padding-right: 5rem;
+            }
+        }
+    }
+}
+
+@if $site-language==Arabic {
     .services {
         direction: rtl
+    }
+
+    @media(max-width:767px) {
+        .services {
+            .content-list {
+                img {
+                    padding-left: 5rem;
+                }
+            }
+        }
     }
 }
