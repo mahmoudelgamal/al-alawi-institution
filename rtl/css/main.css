@@ -1161,10 +1161,6 @@ body {
   .services .content-list p {
     width: 90%; }
 
-@media (max-width: 767px) {
-  .services .content-list img {
-    padding-right: 5rem; } }
-
 .services {
   direction: rtl; }
 

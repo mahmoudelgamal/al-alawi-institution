@@ -12,11 +12,14 @@
         }
     }
 }
-@media(max-width:767px) {
-    .services {
-        .content-list {
-            img {
-                padding-right: 5rem;
+
+@if $site-language==English {
+    @media(max-width:767px) {
+        .services {
+            .content-list {
+                img {
+                    padding-right: 5rem;
+                }
             }
         }
     }
