@@ -582,7 +582,9 @@ body {
 
 @media (max-width: 767px) {
   .feature-box {
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+    .feature-box .heading-tertiary {
+      margin-top: 1.5rem; } }
 
 .tab {
   margin-top: 40px;
@@ -1108,6 +1110,14 @@ body {
 .about__feature li {
   margin-left: 0;
   margin-right: 10px; }
+
+@media (max-width: 767px) {
+  .about__intro p {
+    width: 100%; }
+  .about__feature .heading--light {
+    margin-bottom: 2rem; }
+    .about__feature .heading--light::before {
+      margin-bottom: 1rem; } }
 
 .contact {
   padding: 10rem 0 0; }
