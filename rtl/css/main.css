@@ -1139,7 +1139,9 @@ body {
     margin: 0 auto 12px; }
   .social .heading-tertiary {
     text-align: center;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .social p {
+    text-align: center; } }
 
 .services {
   padding: 8rem 0; }
