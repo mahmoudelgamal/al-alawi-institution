@@ -539,7 +539,9 @@ body {
 
 @media (max-width: 767px) {
   .feature-box {
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+    .feature-box .heading-tertiary {
+      margin-top: 1.5rem; } }
 
 .tab {
   margin-top: 40px;
@@ -641,6 +643,10 @@ body {
     text-transform: capitalize; }
     .media__side-bar a:hover, .media__side-bar a.active {
       color: #EC640F; }
+
+@media (max-width: 767px) {
+  .media__side-bar {
+    margin-bottom: 3rem; } }
 
 .shuffle-imgs .row {
   margin: 0; }
@@ -798,6 +804,10 @@ body {
     margin-top: 20px; }
   .footer .contact ul li {
     margin-bottom: 5px; } }
+
+@media (max-width: 767px) {
+  .footer .map {
+    margin-top: 6rem; } }
 
 /* End Footer */
 /* Start Copyright */
@@ -961,6 +971,7 @@ body {
     color: #fff;
     font-weight: 300;
     font-size: 20px;
+    padding: 5px;
     margin-bottom: 1.5rem; }
 
 @media (max-width: 767px) {
@@ -1015,6 +1026,14 @@ body {
   .about__feature .heading--light::before {
     background-color: #EC640F !important; }
 
+@media (max-width: 767px) {
+  .about__intro p {
+    width: 100%; }
+  .about__feature .heading--light {
+    margin-bottom: 2rem; }
+    .about__feature .heading--light::before {
+      margin-bottom: 1rem; } }
+
 .contact {
   padding: 10rem 0 0; }
   .contact .info {
@@ -1036,6 +1055,16 @@ body {
     .contact .get-touch .button-primary {
       margin-left: 1.6rem; }
 
+@media (max-width: 767px) {
+  .social .heading--light::before {
+    text-align: center;
+    margin: 0 auto 12px; }
+  .social .heading-tertiary {
+    text-align: center;
+    margin-bottom: 10px; }
+  .social p {
+    text-align: center; } }
+
 .services {
   padding: 8rem 0; }
   .services .content-list img {
@@ -1043,6 +1072,15 @@ body {
     margin-bottom: 2rem; }
   .services .content-list p {
     width: 90%; }
+
+@media (max-width: 767px) {
+  .services .content-list img {
+    padding-right: 5rem;
+    max-width: 40rem; } }
+
+@media (max-width: 414px) {
+  .services .content-list img {
+    padding-right: 18rem; } }
 
 .media {
   padding: 8rem 0;
