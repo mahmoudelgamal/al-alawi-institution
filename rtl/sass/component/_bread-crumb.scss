@@ -1,0 +1,30 @@
+/*start about breadcrumb */
+.breadcrumb {
+    background-color: $color-primary-2-dark !important;
+    margin-bottom: 0;
+    padding: 10px;
+    color: $color-white;
+
+    a {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    .active {
+        color: $color-primary-1-dark;
+        font-weight: bold;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: $color-white;
+    }
+}
+
+@if $site-language == Arabic {
+    .breadcrumb {
+        direction: rtl;
+        .breadcrumb-item {
+            float: right;
+        }
+    }
+}
+/*end about breadcrumb */

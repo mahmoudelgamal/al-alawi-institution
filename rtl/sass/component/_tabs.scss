@@ -1,0 +1,35 @@
+.tab {
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    &__item {
+        color: #08526d;
+        border: 2px solid #08526d;
+        padding: 10px 20px !important;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
+        &.active,
+        &:hover {
+            background-color: $color-primary-1-dark;
+            border: 2px solid $color-primary-1-dark;
+            color: #FFF
+        }
+
+        &:hover {
+            cursor: pointer
+        }
+    }
+}
+.content-list>div:not(:first-child) {
+    display: none
+}
+@media(max-width: 767px) {
+    .tab__item {
+        margin-right: 10px;
+    }
+}

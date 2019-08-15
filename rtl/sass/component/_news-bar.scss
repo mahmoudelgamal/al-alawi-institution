@@ -1,0 +1,40 @@
+.bar-wrap {
+    width: 100%;
+    padding-left: 100%;
+    text-transform: capitalize;
+}
+
+.bar-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 20s;
+    
+}
+
+.bar-move:hover {
+    animation-play-state: paused;
+}
+
+.bar-item {
+    display: inline-block;
+    padding: 0 2rem;
+    &:not(:last-child):after {
+        content: "|";
+        padding: 7px;
+        color: #dfdfdf;
+        font-size: 1em;            
+    }
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $color-white;
+
+    }
+    &:hover {
+        color: $color-primary-1-dark;
+    }
+}

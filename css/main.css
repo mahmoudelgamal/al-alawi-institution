@@ -498,7 +498,7 @@ body {
   width: 100%;
   height: 4rem;
   border: 1px solid #ccc;
-  padding: 8px;
+  text-indent: 8px;
   font-size: inherit;
   color: #6f6f6f;
   border-radius: 2px;
@@ -711,7 +711,7 @@ body {
     transition: all .2s; }
   .navbar-light .navbar-nav .nav-hover-content .media-content {
     top: 6.7rem;
-    right: 2.5%;
+    right: -4.5%;
     min-width: 22rem;
     display: none;
     transition: all .2s; }
@@ -816,6 +816,16 @@ body {
       font-size: 18px; }
       .copyright li a:hover {
         opacity: .8; }
+  .copyright .copy {
+    text-align: left; }
+  .copyright .copy-social {
+    text-align: right; }
+
+@media (max-width: 767px) {
+  .copyright .copy {
+    text-align: center; }
+  .copyright .copy-social {
+    text-align: center; } }
 
 /* End Copyright */
 /* Start Upper Bar */
@@ -825,19 +835,29 @@ body {
   padding: .5rem;
   position: relative;
   z-index: 999999; }
-  .upper-bar .info .language {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Cairo', sans-serif;
-    font-size: 1.3rem; }
-    .upper-bar .info .language .flag {
-      display: inline-block;
-      background-image: url(../img/ar-flag.jpg);
-      background-size: contain;
-      height: 10px;
-      width: 15px;
-      transform: translate(-2px, 2px); }
+  .upper-bar .bar-social {
+    text-align: left; }
+  .upper-bar .info {
+    text-align: right; }
+    .upper-bar .info .language {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Cairo', sans-serif;
+      font-size: 1.3rem; }
+      .upper-bar .info .language .flag {
+        display: inline-block;
+        background-image: url(../img/ar-flag.jpg);
+        background-size: contain;
+        height: 10px;
+        width: 15px;
+        transform: translate(-2px, 2px); }
+
+@media (max-width: 767px) {
+  .upper-bar .bar-social {
+    text-align: center; }
+  .upper-bar .info {
+    text-align: center; } }
 
 /* End Upper Bar */
 .news-bar-section {
@@ -900,6 +920,8 @@ body {
     border: 1px solid #ddd;
     border-radius: 3px;
     max-height: 18.2rem; }
+  .section-our-client .row {
+    direction: ltr; }
 
 @media (max-width: 767px) {
   .section-our-client a img {
@@ -983,8 +1005,10 @@ body {
   background-image: linear-gradient(to right bottom, rgba(28, 56, 106, 0.9), rgba(28, 56, 106, 0.9)), url(../img/about03.jpg);
   background-attachment: fixed;
   color: #fff !important; }
-  .about__feature li:last-child {
-    margin-bottom: 3rem; }
+  .about__feature li {
+    margin-left: 10px; }
+    .about__feature li:last-child {
+      margin-bottom: 3rem; }
   .about__feature img {
     margin-top: 4rem;
     border-radius: 2px; }

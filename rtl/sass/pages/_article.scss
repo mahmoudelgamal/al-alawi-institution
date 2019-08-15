@@ -1,0 +1,20 @@
+.article {
+    color: #333;
+    img {
+        height:30rem;
+        margin-bottom: 2rem
+    }
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-primary-1-dark;
+        text-transform: capitalize;
+        margin-bottom: 1.5rem
+    }
+    .date {
+        color: $color-grey-dark;
+        text-transform: uppercase;
+        font-weight: bold
+    }
+
+}

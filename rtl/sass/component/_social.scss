@@ -1,0 +1,56 @@
+
+/* start social */
+.social {
+    padding: 10px 0;
+}
+
+.social h4 {
+    font-weight: bold;
+
+}
+
+.social p {
+    line-height: 1.5
+}
+
+.social .fab {
+    margin: 25px 80px 0 0;
+    color: $color-white;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: .3s ease-in-out all;
+}
+
+@media (max-width:991px) {
+    .social .fab {
+        margin: 25px 30px 0 0;
+        font-size: 1.9em;
+
+    }
+}
+
+.social .fa-facebook-f:hover {
+    color: #3b5998;
+
+}
+
+.social .fa-twitter:hover {
+    color: #1da1f2
+}
+
+.social .fa-instagram:hover {
+    color: #c13584
+}
+
+.social .fa-linkedin-in:hover {
+    color: #00a0dc
+}
+
+.social .fa-youtube:hover {
+    color: #ff0000
+}
+
+
+/* end social */
+
+/* end social */

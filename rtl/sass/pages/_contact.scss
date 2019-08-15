@@ -1,0 +1,36 @@
+.contact {
+    padding: 10rem 0 0;
+
+    .info {
+        padding: 0rem 0 10rem;
+    }
+
+    .feature-box {
+        span {
+            display: block;
+            font-weight: bold;
+        }
+    }
+
+    .social {
+        padding: 4rem 0;
+        color: $color-white !important;
+        background-color: $color-primary-1-dark
+    }
+
+    .heading--light::before {
+        margin-bottom: 1rem;
+        background-color: #ec640f;
+    }
+
+    .heading-tertiary {
+        color: #ec640f;
+    }
+    .get-touch {
+        padding: 8rem 0;
+        .button-primary {
+            margin-left: 1.6rem;
+        }
+    }
+
+}

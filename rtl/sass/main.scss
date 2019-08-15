@@ -1,0 +1,35 @@
+@import 'abstract/functions';
+@import 'abstract/mixins';
+@import 'abstract/variables';
+
+@import 'base/base';
+@import 'base/utilities';
+@import 'base/typography';
+@import 'base/animation';
+
+@import 'component/icons';
+@import 'component/slider';
+@import 'component/news-bar';
+@import 'component/button';
+@import 'component/card';
+@import 'component/training-card';
+@import 'component/form';
+@import 'component/service-box';
+@import 'component/tabs';
+@import 'component/bread-crumb';
+@import 'component/social';
+@import 'component/side-bar';
+@import 'component/gallery';
+
+@import 'layout/navigation';
+@import 'layout/footer';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/services';
+@import 'pages/media';
+@import 'pages/article';
+@import 'pages/certifications';
+@import 'pages/training-categories';
+@import 'pages/course';

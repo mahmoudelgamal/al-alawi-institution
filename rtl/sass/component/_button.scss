@@ -1,0 +1,79 @@
+.button {
+    &-primary {
+        color: $color-white;
+        background-color: $color-primary-2-dark;
+        padding: .98rem 1.5rem;
+        cursor: pointer;
+        transition: all .2s;
+        font-size: inherit;
+
+        &:active {}
+
+        &:focus {}
+
+        &:hover {
+            opacity: .9;
+            text-decoration: none;
+            color: $color-white;
+        }
+
+        &--center {
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: .5px;
+            border-radius: 5px;
+            padding: 1.3rem 3.9rem;
+            font-size: 1.8rem;
+        }
+
+        &--back {
+            color: $color-primary-1-dark;
+            background-color: $color-white;
+            border-radius: 3px;
+            box-shadow: 0 2rem 4rem rgba(28, 56, 106, .1);
+
+            &:hover {
+                color: $color-black;
+                opacity: 1;
+            }
+        }
+    }
+
+    &-text {
+        font-size: 1.8rem;
+        font-weight: bold;
+
+        &:link,
+        &:visited {
+            color: #ED7C39;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 2px solid #ED7C39;
+            padding: 3px;
+            transition: all .2s;
+            font-size: 21px;
+            font-weight: 600;
+        }
+
+        &:hover {
+            background-color: $color-primary-2-dark;
+            color: $color-white;
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+            transform: translateY(0);
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .button {
+        &-text {
+            margin-bottom: 2rem;
+        }
+    }
+}
