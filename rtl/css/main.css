@@ -1168,6 +1168,10 @@ body {
   .services .content-list img {
     padding-left: 5rem; } }
 
+@media (max-width: 414px) {
+  .services .content-list img {
+    padding-left: 18rem; } }
+
 .media {
   padding: 8rem 0;
   background-color: #f7f7f7; }
