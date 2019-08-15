@@ -114,6 +114,14 @@
     }
 }
 
+@media (max-width: 767px) {
+
+    .footer .map {
+        margin-top: 6rem
+    }
+}
+
+
 /* End Footer */
 
 /* Start Copyright */
@@ -141,31 +149,39 @@
             }
         }
     }
+
     .copy {
-        text-align: left; 
+        text-align: left;
     }
+
     .copy-social {
         text-align: right
     }
 }
-@if $site-language ==Arabic {
+
+@if $site-language==Arabic {
     .copyright {
         .copy {
-            text-align: right; 
+            text-align: right;
         }
+
         .copy-social {
             text-align: left
         }
     }
 }
+
 @media(max-width:767px) {
     .copyright {
         .copy {
-            text-align: center; 
+            text-align: center;
         }
+
         .copy-social {
             text-align: center
         }
     }
+
 }
+
 /* End Copyright */

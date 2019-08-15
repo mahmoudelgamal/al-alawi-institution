@@ -26,11 +26,33 @@
     .heading-tertiary {
         color: #ec640f;
     }
+
     .get-touch {
         padding: 8rem 0;
+
         .button-primary {
             margin-left: 1.6rem;
         }
     }
 
+}
+
+@if $site-language==Arabic {
+    .contact .get-touch .button-primary {
+        margin-right: 1.6rem;
+    }
+}
+
+@media(max-width:767px) {
+    .social {
+        .heading--light::before {
+            text-align: center;
+            margin: 0 auto 12px;
+        }
+
+        .heading-tertiary {
+            text-align: center;
+            margin-bottom: 10px
+        }
+    }
 }
