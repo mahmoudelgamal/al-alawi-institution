@@ -505,7 +505,9 @@ body {
   .training-card {
     margin-bottom: 2rem; }
   .training-card__heading {
-    top: 16rem; } }
+    top: 16rem; }
+  .training-card__side--back .button-primary {
+    margin-left: 0 !important; } }
 
 @media (max-width: 415px) {
   .training-card__cta {
