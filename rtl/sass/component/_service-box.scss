@@ -8,16 +8,16 @@
     transition: transform .3s;
 
     @include respond(tab-port) {
-        padding: 2rem;
+        padding: 2rem; 
     }
     .button-primary--center {
-        padding: 5px 10px;
-        font-size: 15px
+        padding: 5px 10px;  
+        font-size: 15px     
     }
     &__icon {
         font-size: 7rem;
         margin-bottom: 2.5rem;
-        display: inline-block;
+        display: inline-block;     
         background-image: linear-gradient(to right, $color-primary-2-light, $color-primary-2-dark);
         -webkit-background-clip: text;
         color: transparent;
