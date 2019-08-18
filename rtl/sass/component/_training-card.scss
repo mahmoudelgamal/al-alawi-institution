@@ -193,13 +193,27 @@
 
 }
 
+@if $site-language==Arabic {
+    .training-card__heading {
+        top: 22.8rem;
+        right: 2rem;
+        width: 100%;
+    }
+
+    .training-card__heading-span {
+        padding: 0 5px;
+    }
+}
+
 @media(max-width:767px) {
     .training-card {
         margin-bottom: 2rem
     }
 
     .training-card__heading {
-        top: 16rem
+        top: 18.8rem;
+        right: 0rem;
+        width: 100%;
     }
 
     .training-card__side {
@@ -215,20 +229,9 @@
     }
 
     .training-card__heading {
-        right: 1rem;
-        top: 18rem;
+        right: 0rem;
+        top: 18.8rem;
         font-size: 2rem;
     }
 }
 
-@if $site-language==Arabic {
-    .training-card__heading {
-        top: 22.8rem;
-        right: 2rem;
-        width: 100%;
-    }
-
-    .training-card__heading-span {
-        padding: 0 5px;
-    }
-}

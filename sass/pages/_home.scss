@@ -234,6 +234,13 @@
     }
 }
 
+@if $site-language==Arabic {
+    .section-contact .contact-box>input {
+        direction: rtl;
+    }
+
+}
+
 @media(max-width: 767px) {
     .section-contact {
         .contact-box {

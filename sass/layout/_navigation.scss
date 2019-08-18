@@ -2,6 +2,12 @@
 .navbar {
     padding: 0 1rem;
     position: relative;
+    direction: rtl;
+
+    .ml-auto {
+        margin-right: auto !important;
+        margin-left: initial !important;
+    }
 }
 
 .navbar-brand {
@@ -113,11 +119,23 @@
     .navbar-light .navbar-nav .nav-hover-content li {
         text-align: right !important
     }
+
     .navbar-light .navbar-nav .nav-hover-content .media-content {
         right: 11.5%;
     }
+
     .navbar-light .navbar-nav .nav-hover-content .certification-content {
         right: 43%;
+    }
+
+    .navbar-light .navbar-nav .nav-hover-content .media-content {
+        left: 0%;
+        right: initial;
+    }
+
+    .navbar .ml-auto {
+        margin-right: auto !important;
+        margin-left: initial !important;
     }
 }
 
