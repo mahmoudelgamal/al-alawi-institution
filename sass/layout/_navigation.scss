@@ -2,12 +2,7 @@
 .navbar {
     padding: 0 1rem;
     position: relative;
-    direction: rtl;
 
-    .ml-auto {
-        margin-right: auto !important;
-        margin-left: initial !important;
-    }
 }
 
 .navbar-brand {
@@ -115,7 +110,7 @@
     font-size: 1em;
 }
 
-@if $site-language==Arabic {
+@if $site-language == Arabic {
     .navbar-light .navbar-nav .nav-hover-content li {
         text-align: right !important
     }
@@ -136,6 +131,9 @@
     .navbar .ml-auto {
         margin-right: auto !important;
         margin-left: initial !important;
+    }
+    .navbar {
+        direction: rtl;
     }
 }
 

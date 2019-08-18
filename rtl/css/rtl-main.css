@@ -572,7 +572,7 @@ body {
     .feature-box {
       padding: 2rem; } }
   .feature-box .button-primary--center {
-    padding: 5px 10px;
+    padding: .9rem 1.7rem;
     font-size: 15px; }
   .feature-box__icon {
     font-size: 7rem;
@@ -725,11 +725,7 @@ body {
 /* Start Navbar */
 .navbar {
   padding: 0 1rem;
-  position: relative;
-  direction: rtl; }
-  .navbar .ml-auto {
-    margin-right: auto !important;
-    margin-left: initial !important; }
+  position: relative; }
 
 .navbar-brand__image {
   width: 25rem; }
@@ -810,6 +806,9 @@ body {
 .navbar .ml-auto {
   margin-right: auto !important;
   margin-left: initial !important; }
+
+.navbar {
+  direction: rtl; }
 
 @media (max-width: 991px) {
   .navbar-nav > li > a:after {

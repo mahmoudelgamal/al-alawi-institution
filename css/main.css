@@ -677,11 +677,7 @@ body {
 /* Start Navbar */
 .navbar {
   padding: 0 1rem;
-  position: relative;
-  direction: rtl; }
-  .navbar .ml-auto {
-    margin-right: auto !important;
-    margin-left: initial !important; }
+  position: relative; }
 
 .navbar-brand__image {
   width: 25rem; }
