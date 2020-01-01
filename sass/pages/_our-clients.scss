@@ -1,0 +1,25 @@
+.our-clients-page {
+    padding-bottom: 10rem;
+
+    &__intro {
+        padding-bottom: 1rem;
+        padding-top: 6rem;
+
+        .heading-primary {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #808080;
+            width: 90%;
+            margin: 2rem auto 5rem;
+            font-size: 17px;
+        }
+    }
+
+    &__img {
+        max-width: 14rem;
+        margin-bottom: 3rem;
+    }
+}

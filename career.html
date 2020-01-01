@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
-    <title>About</title>
+    <title>Career</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/fontawesome.css" rel="stylesheet">
     <link href="css/brands.css" rel="stylesheet">
     <link href="css/solid.css" rel="stylesheet">
+    <link href="css/fancy_fileupload.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -32,7 +33,7 @@
                     <li class="nav-item ">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item nav__about active">
+                    <li class="nav-item nav__about">
                         <a class="nav-link " href="about.html">about</a>
                     </li>
                     <li class="nav-item">
@@ -50,6 +51,9 @@
                             </ul>
                         </div>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Careers </a>
+                    </li>
                     <li class="nav-item nav__media">
                         <a class="nav-link " href="blogger.html">media</a>
                         <div class="nav-hover-content">
@@ -63,8 +67,9 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="career.html">Careers</a>
+                        <a class="nav-link" href="#">clients</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link last-child" href="contact.html">contact</a>
                     </li>
@@ -79,134 +84,91 @@
             <ol class="breadcrumb">
                 <div class="container">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                    <li class="breadcrumb-item active" aria-current="page">Career</li>
                 </div>
             </ol>
         </nav>
         <!-- end bread crumb -->
 
         <!-- start about us intro -->
-        <section class="about__intro">
-            <div class="container text-center">
-                <h2 class="heading-primary heading--center">CEO Message</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic accusamus ab quidem, porro officia
-                    beatae nisi dicta, nulla quibusdam adipisci unde est excepturi sit atque ipsum eum et quo enim!porro
-                    officia beatae nisi dicta, nulla quibusdam adipisci unde est excepturi sit atque ipsum eum et quo
-                    enim!.</p>
-                <img class="img-thumbnail" src="img/about.jpeg" />
+        <section class="career">
+            <div class="container">
+                <div class="career__intro">
+                    <div class="container text-center">
+                        <h2 class="heading-primary heading--center">Career</h2>
+                        <p class="mb-4">At Al Alawi Institute, We are always on the lookout for exceptional talent in
+                            corporate
+                            training,
+                            consulting, business development and business support. If you are interested in a career at
+                            Al
+                            Alawi
+                            Institute for Human Resource Development, please click on one of the link and upload your
+                            CV,
+                            upload
+                            the required documents, and we will get back to you when we have an opportunity that fits
+                            your
+                            education, experience and expertise.
+                        </p>
+                    </div>
+                </div>
+                <div class="career__form">
+                    <form action="">
+                        <div class="career__form-box">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h2 class="career__form-title">Personal Info</h2>
+                                    <p class="career__form-description">Tell us something about yourself</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="name">Full name <span>*</span> </label>
+                                    <input id="name" class="form__input u-margin-b-small" type="text" placeholder="Your Full Name"
+                                        required>
+                                    <label for="mail">Email address <span>*</span></label>
+                                    <input id="mail" class="form__input u-margin-b-small" type="email"
+                                        placeholder="Your Email Address" required>
+                                    <label for="phone">Phone number <span>*</span></label>
+                                    <input id="phone" class="form__input u-margin-b-small" type="tel"
+                                        placeholder="Your Phone Number" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="career__form-box">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h2 class="career__form-title">CV / Resume <span>*</span></h2>
+                                    <p class="career__form-description">Upload your CV or resume file</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form__input u-margin-b-small" type="file" id="uploadfile" name="files"
+                                        accept=".pdf , .doc , .docx" placeholder="Upload ypur file here" required>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="career__form-box">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h2 class="career__form-title">Cover letter</h2>
+                                    <p class="career__form-description">
+                                        Insert your cover letter here</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea class="form__textarea" placeholder="type your message here" name="message"
+                                        id=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" class="btn button-primary text-center mt-3" value="Submit
+                                Application" />
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </section>
         <!-- start about us intro -->
-        <!-- start our statement -->
-        <section class="about__our-statement">
-            <div class="container">
-                <h2 class="heading--center heading-primary u-center-text u-margin-b-big">our statement</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="feature-box">
-                            <i class="fas fa-rocket feature-box__icon"></i>
-                            <h3 class="heading-tertiary u-margin-b-small">our mission</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor Aperiam, ipsum sapiente aspernatur.
-                                Lorem ipsum dolor Aperiam, ipsum sapiente aspernatur.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature-box">
-                            <i class="fas fa-eye feature-box__icon"></i>
-                            <h3 class="heading-tertiary u-margin-b-small">our vision</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor Aperiam, ipsum sapiente aspernatur.
-                                Lorem ipsum dolor Aperiam, ipsum sapiente aspernatur.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature-box">
-                            <i class="fas fa-hand-holding-heart feature-box__icon"></i>
-                            <h3 class="heading-tertiary u-margin-b-small">our value</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor Aperiam, ipsum sapiente aspernatur.
-                                Lorem ipsum dolor Aperiam, ipsum sapiente aspernatur.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end our statement -->
 
-        <!-- start about feature -->
-        <section class="about__feature">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="about__feature-content">
-                            <h2 class="heading-secondary heading--light">
-                                Our Objectives
-                            </h2>
-                            <ul>
-                                <li>Lorem ipsum dolor amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur elit.</li>
-                                <li>Lorem ipsum dolor sit consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit consectetur adipisicing elit.</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="./img/about-02.jpg" alt="image" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end about feature -->
-
-        <!-- START OUR ORGNIZATIONS -->
-        <section class="services">
-            <div class="container">
-                <h2 class="heading-primary heading--center u-margin-b-big u-center-text">our orgnizations</h2>
-                <ul class='list-unstyled row text-center tab'>
-                    <li data-class=".training" class="active col-md tab__item"> Al Alawi Institute for HRD</li>
-                    <li data-class=".consulting" class="col-md tab__item">Al Tasneem Projects for Development</li>
-                    <li data-class=".enterpnership" class="col-md tab__item">Al Yosr School Private School</li>
-                </ul>
-                <div class="content-list">
-                    <div class="training">
-                        <img src="./img/services/01.jpg" alt="img" class="img-fluid">
-                        <h2 class="heading-tertiary">Al Alawi Institute for HRD</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima qui adipisci ad?
-                            Ipsum blanditiis cumque nulla nihil? Hic, tempore cum. Nulla quam vel voluptates, similique
-                            alias minimaci ad? Ipsum blanditiis cumque nulla nihil? Hic, tempore cum. Nulla quam vel
-                            voluptates, similique alias minima corporis iusto.</p>
-                        <a href="#" class="button-primary button-primary--dark ">More</a>
-                    </div>
-                    <div class="consulting">
-                        <img src="./img/services/02.jpg" alt="img" class="img-fluid">
-                        <h2 class="heading-tertiary">Al Tasneem Projects for Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima qui adipisci ad?
-                            Ipsum blanditiis cumque nulla nihil? Hic, tempore cum. Nulla quam vel voluptates, similique
-                            alias minimaci ad? Ipsum blanditiis cumque nulla nihil? Hic, tempore cum. Nulla quam vel
-                            voluptates, similique alias minima corporis iusto.</p>
-                        <a href="#" class="button-primary button-primary--dark ">More</a>
-                    </div>
-                    <div class="enterpnership">
-                        <img src="./img/services/03.jpg" alt="img" class="img-fluid">
-                        <h2 class="heading-tertiary">Al Yosr School Private School</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima qui adipisci ad?
-                            Ipsum blanditiis cumque nulla nihil? Hic, tempore cum. Nulla quam vel voluptates, similique
-                            alias minimaci ad? Ipsum blanditiis cumque nulla nihil? Hic, tempore cum. Nulla quam vel
-                            voluptates, similique alias minima corporis iusto.</p>
-                        <a href="#" class="button-primary button-primary--dark ">More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- END OUR ORGNIZATIONS -->
         <!-- start contact -->
         <section class="section-contact">
             <p class="text-center">Join our news letter and don't miss an update to our offers!</p>
@@ -302,7 +264,24 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery.ui.widget.js"></script>
+    <script src="js/jquery.fileupload.js"></script>
+    <script src="js/jquery.iframe-transport.js"></script>
+    <script src="js/jquery.fancy-fileupload.js"></script>
+    <script>
+        // start contact form
+        var container = $('.section-contact .contact-box').innerWidth();
+        var button = $('.section-contact .button-primary').outerWidth();
+        var oneWidth = (container - (button + 19)) / 3;
+        $('.section-contact .contact-box > input').css('width', oneWidth + 'px')
+
+        $('#uploadfile').FancyFileUpload({
+            params: {
+                action: 'fileuploader'
+            },
+            maxfilesize: 1000000
+        });
+    </script>
 </body>
 
 </html>

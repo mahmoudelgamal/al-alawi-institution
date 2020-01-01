@@ -55,13 +55,6 @@
 
 @media(max-width:767px) {
     .upper-bar {
-        .bar-social {
-            text-align: center;
-        }
-
-        .info {
-            text-align: center;
-        }
     }
 }
 
@@ -98,8 +91,8 @@
 .section-services {
     padding: 10rem 0;
     background-image: linear-gradient(to right bottom,
-            rgba(#0c2461, 0.8),
-            rgba(#0c2461, 0.8)),
+            rgba(#0c2461, 0.6),
+            rgba(#0c2461, 0.6)),
         url(../img/services.jpg);
     background-size: cover;
 
@@ -144,9 +137,20 @@
 // start certification 
 .section-certifications {
     padding: 10rem 0;
-    background-image: linear-gradient(to right bottom, rgba($color-white, .9), rgba($color-white, .9)), url(../img/testimonial.jpg);
+    background-image: linear-gradient(to right bottom,
+            rgba(#0c2461, 0.8),
+            rgba(#0c2461, 0.8)),
+        url(../img/testimonial.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    .heading-primary {
+        color: $color-primary-2-dark;
+    }
+
+    .heading--center::before {
+        background-color: $color-primary-2-dark;
+    }
 
     .card {
         text-align: center;

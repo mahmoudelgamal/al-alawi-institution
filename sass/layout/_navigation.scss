@@ -7,7 +7,7 @@
 
 .navbar-brand {
     &__image {
-        width: 25rem;
+        width: 30rem;
     }
 }
 
@@ -17,7 +17,7 @@
 
         .nav-item {
             display: block;
-            padding: 15px 0;
+            padding: 23px 0;
         }
 
         .nav-link {
@@ -68,16 +68,16 @@
 
 
             .certification-content {
-                top: 6.7rem;
-                right: 24%;
+                top: 8.3rem;
+                right: 34%;
                 min-width: 20rem;
                 display: none;
                 transition: all .2s;
             }
 
             .media-content {
-                top: 6.7rem;
-                right: -4.5%;
+                top: 8.3rem;
+                right: 1.5%;
                 min-width: 22rem;
                 display: none;
                 transition: all .2s;
@@ -110,7 +110,7 @@
     font-size: 1em;
 }
 
-@if $site-language == Arabic {
+@if $site-language==Arabic {
     .navbar-light .navbar-nav .nav-hover-content li {
         text-align: right !important
     }
@@ -132,8 +132,20 @@
         margin-right: auto !important;
         margin-left: initial !important;
     }
+
     .navbar {
         direction: rtl;
+    }
+}
+
+@media(min-width: 1206px) {
+    .navbar-expand-lg {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
     }
 }
 
@@ -149,6 +161,9 @@
                 margin-bottom: .5rem;
             }
         }
+    }
+    .navbar-light .navbar-nav .nav-item {
+        padding: 7px 0;
     }
 
     .nav-hover-content {

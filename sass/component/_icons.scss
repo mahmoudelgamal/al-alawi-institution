@@ -1,4 +1,7 @@
 .icon-box {
+    display: flex;
+    align-items: center;
+
     &__text {
         color: $color-white;
         text-transform: uppercase;
@@ -13,5 +16,22 @@
     [class^='fa'] {
         padding:0 7px 0;
         color: $color-white;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: $color-primary-1-dark;
+        }
     }
 } 
+
+@media (max-width:767px) {
+    .icon-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &__text {
+            display: none;
+        }
+    }
+}

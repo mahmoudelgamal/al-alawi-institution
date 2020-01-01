@@ -27,6 +27,13 @@
             font-size: 1.8rem;
         }
 
+        &--dark {
+            background-color: $color-primary-1-dark;
+            display: inline-block;
+            border-radius: 6px;
+            padding: .7rem 2rem;
+        }
+
         &--back {
             color: $color-primary-1-dark;
             background-color: $color-white;

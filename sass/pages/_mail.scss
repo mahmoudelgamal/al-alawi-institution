@@ -1,0 +1,100 @@
+/*start message*/
+.message {
+    max-width: 550px;
+    margin: auto;
+
+
+    .brand-logo {
+        border-bottom: 1px solid #dedede;
+    }
+
+    .brand-logo h5 {
+        text-align: center;
+        font-size: 26px;
+        color: #444;
+        margin-top: 20px;
+        padding-bottom: 11px
+    }
+
+    .message-body {
+        padding: 30px;
+
+        h2 {
+            font-size: 23px;  
+            color: #484848;
+        }
+
+        h3,
+        p {
+            color: #3e3e3e;
+            font-weight: 500;
+            font-size: 15px;
+            margin: 18px 0;
+        }
+
+        p a {
+            color: #3e3e3e;
+        }
+
+        button {
+            display: block;
+            margin: 38px auto;
+            color: #fff;
+            background-color: #08526D;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 10px 63px;
+            border-radius: 28px;
+        }
+
+        .btn:focus {
+            box-shadow: none
+        }
+
+        p:last-of-type {
+            margin: 30px 0
+        }
+
+        .need-help {
+            margin: 46px 0 0px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 24px;
+        }
+
+        .need-help h5 {
+            font-weight: 500;
+            color: #a0a0a0;
+        }
+
+        .need-help span {
+            display: block;
+            font-weight: 400;
+            color: #a9a9a9;
+        }
+    }
+
+    .message-footer p {
+        color: #a9a9a9;
+
+        .fab {
+            color: #fff;
+            background-color: red;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 21px;
+            line-height: 49px;
+            margin-left: 11px;
+        }
+
+        a .fa-facebook-f {
+            background-color: #3b5998
+        }
+
+        a .fa-twitter {
+            background-color: #1da1f2;
+        }
+    }
+}
+
+/*end message*/
