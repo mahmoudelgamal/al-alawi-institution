@@ -134,6 +134,11 @@
     .certifications .card,
     .training-categories .card {
         text-align: center;
+
+        .card-title {
+            font-size: 17px;
+        }
+    
     }
 
     .section-upcoming-classes .card .course-date {
@@ -144,5 +149,7 @@
             font-size: 2rem;
         }
     }
+
+
 
 }

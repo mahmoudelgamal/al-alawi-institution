@@ -485,6 +485,14 @@ body {
   .certifications .card,
   .training-categories .card {
     text-align: center; }
+    .section-upcoming-classes .card .card-title,
+    .media-center .card .card-title,
+    .section-certifications .card .card-title,
+    .media .card .card-title,
+    .training-categories-section .card .card-title,
+    .certifications .card .card-title,
+    .training-categories .card .card-title {
+      font-size: 17px; }
   .section-upcoming-classes .card .course-date {
     width: 6rem;
     height: 9rem; }
@@ -669,7 +677,9 @@ body {
   .feature-box {
     margin-bottom: 3rem; }
     .feature-box .heading-tertiary {
-      margin-top: 1.5rem; } }
+      margin-top: 1.5rem; }
+    .feature-box__icon {
+      font-size: 5rem; } }
 
 .tab {
   margin-top: 40px;
