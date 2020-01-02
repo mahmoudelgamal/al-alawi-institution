@@ -677,7 +677,9 @@ body {
   .feature-box {
     margin-bottom: 3rem; }
     .feature-box .heading-tertiary {
-      margin-top: 1.5rem; } }
+      margin-top: 1.5rem; }
+    .feature-box__icon {
+      font-size: 5rem; } }
 
 .tab {
   margin-top: 40px;

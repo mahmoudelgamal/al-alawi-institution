@@ -1,0 +1,80 @@
+.career {
+    padding-bottom: 10rem;
+
+    &__intro {
+        padding-bottom: 1rem;
+        padding-top: 6rem;
+
+        .heading-primary {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #808080;
+            width: 90%;
+            margin: 2rem auto 5rem;
+            font-size: 17px;
+        }
+    }
+
+    &__form-box {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        padding-top: 0px;
+        border-bottom: 1px solid #d8e3e7;
+        overflow: hidden;
+
+        &:first-of-type {
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #d8e3e7;
+
+        }
+
+    }
+
+    label {
+        margin: 0px 0 7px 0;
+        font-weight: 700;
+        font-size: 14px;
+        color: #2a333d;
+    }
+
+    span {
+        color: red;
+    }
+
+
+    &__form-title {
+        color: #2a333d;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+
+    &__form-description {
+        font-size: 14px;
+        color: #8aa2ad;
+    }
+
+    input,
+    textarea {
+
+        &::placeholder {
+            color: #8aa2ad;
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #8aa2ad;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #8aa2ad;
+        }
+
+    }
+
+}
