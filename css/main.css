@@ -299,16 +299,6 @@ body {
   margin-bottom: 30px;
   position: relative;
   overflow: hidden; }
-  .section-upcoming-classes .card .card-img-top,
-  .media-center .card .card-img-top,
-  .section-certifications .card .card-img-top,
-  .media .card .card-img-top,
-  .training-categories-section .card .card-img-top,
-  .certifications .card .card-img-top,
-  .training-categories .card .card-img-top {
-    min-height: 200px;
-    -o-object-fit: cover;
-    object-fit: cover; }
   .section-upcoming-classes .card .card-title,
   .media-center .card .card-title,
   .section-certifications .card .card-title,
