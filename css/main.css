@@ -1408,3 +1408,7 @@ body {
   .our-clients-page__img {
     max-width: 14rem;
     margin-bottom: 3rem; }
+
+@media (max-width: 991px) {
+  .our-clients-page__img {
+    max-width: 100%; } }
