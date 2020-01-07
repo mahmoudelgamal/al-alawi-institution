@@ -868,19 +868,19 @@ body {
       border-bottom: 1px solid #f1f1f1; }
   .navbar-light .navbar-nav .nav-hover-content .category-content {
     top: 8.3rem;
-    right: 55%;
+    right: 50%;
     min-width: 20rem;
     display: none;
     transition: all .2s; }
   .navbar-light .navbar-nav .nav-hover-content .certification-content {
     top: 8.3rem;
-    right: 34%;
+    right: 24%;
     min-width: 20rem;
     display: none;
     transition: all .2s; }
   .navbar-light .navbar-nav .nav-hover-content .media-content {
     top: 8.3rem;
-    right: 1.5%;
+    right: -9.5%;
     min-width: 22rem;
     display: none;
     transition: all .2s; }
