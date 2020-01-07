@@ -62,44 +62,52 @@ body {
     }
 }
 
-@media(max-width:767px) {
-    .heading {
-        &-primary {
-            font-size: 3rem;
-        }
-
-        &--side::before {
-            content: '';
-            width: 6rem;
-        }
-
-        &--center::before {
-            content: '';
-            width: 6rem;
-        }
-    }
-}
-
 @if $site-language==Arabic {
-    body {
-        font-family: 'Cairo', sans-serif;
-    }
-
     .heading {
         &-primary {
-            direction: rtl;
-        }
-
-        &-secondary {
-            direction: rtl;
-        }
-
-        &-tertiary {
-            direction: rtl;
-        }
-
-        &--side::before {
-            direction: rtl;
+            letter-spacing: 0;
         }
     }
 }
+
+    @media(max-width:767px) {
+        .heading {
+            &-primary {
+                font-size: 3rem;
+            }
+
+            &--side::before {
+                content: '';
+                width: 6rem;
+            }
+
+            &--center::before {
+                content: '';
+                width: 6rem;
+            }
+        }
+    }
+
+    @if $site-language==Arabic {
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .heading {
+            &-primary {
+                direction: rtl;
+            }
+
+            &-secondary {
+                direction: rtl;
+            }
+
+            &-tertiary {
+                direction: rtl;
+            }
+
+            &--side::before {
+                direction: rtl;
+            }
+        }
+    }

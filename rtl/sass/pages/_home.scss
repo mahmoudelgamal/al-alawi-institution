@@ -152,8 +152,14 @@
         background-color: $color-primary-2-dark;
     }
 
-    .card {
-        text-align: center;
+    img {
+        margin-bottom: 3rem;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.01);
+            opacity: .9;
+        }
     }
 }
 
